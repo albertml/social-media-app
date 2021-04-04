@@ -19,7 +19,7 @@ struct TabViews: View {
     
     var addButton: some View {
         Button {
-            
+            selection = 2
         } label: {
             ZStack {
                 Circle()
@@ -36,41 +36,42 @@ struct TabViews: View {
         .offset(y: -20)
     }
     
+    @State private var selection = 0
+    
     var body: some View {
         ZStack {
-            TabView {
+            TabView(selection:$selection) {
                 FeedView()
                     .tabItem {
                         SFSymbol.home
                     }
+                    .tag(0)
                 
                 Text("Messages")
                     .tabItem {
                         SFSymbol.messages
                     }
+                    .tag(1)
                 
                 PostView()
                     .tabItem {
                         Text("")
                     }
+                    .tag(2)
                 
                 NotificationsView()
                     .tabItem {
                         SFSymbol.notifications
                     }
+                    .tag(3)
                 
                 ProfileView()
                     .tabItem {
                         SFSymbol.profile
                     }
+                    .tag(4)
             }
             .overlay(addButton, alignment: .bottom)
         }
-    }
-}
-
-struct TabViews_Previews: PreviewProvider {
-    static var previews: some View {
-        TabViews()
     }
 }
