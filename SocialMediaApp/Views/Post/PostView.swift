@@ -89,14 +89,16 @@ struct PostView: View {
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading,  spacing: 20) {
-                Spacer()
-                    .frame(height: 10)
-                inputTitleView
-                uploadPhotoView
-                Spacer()
+            ScrollView {
+                VStack(alignment: .leading,  spacing: 20) {
+                    Spacer()
+                        .frame(height: 10)
+                    inputTitleView
+                    uploadPhotoView
+                    Spacer()
+                }
+                .padding(.horizontal)
             }
-            .padding(.horizontal)
             .navigationTitle(navigationTitle)
             .navigationBarItems(
                 leading: leadingButton,
