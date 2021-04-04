@@ -18,6 +18,7 @@
 		BD7266E825E29F4100067536 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7266E725E29F4100067536 /* Color+Extensions.swift */; };
 		BD7266EC25E2ABDE00067536 /* TabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7266EB25E2ABDE00067536 /* TabViews.swift */; };
 		BD7266F125E2AD4000067536 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7266F025E2AD4000067536 /* CircleImageView.swift */; };
+		BD790BC42619A08700E24863 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD790BC32619A08700E24863 /* PostView.swift */; };
 		BDA68A1725E2956900E3710B /* SocialMediaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA68A1625E2956900E3710B /* SocialMediaAppApp.swift */; };
 		BDA68A1B25E2956C00E3710B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDA68A1A25E2956C00E3710B /* Assets.xcassets */; };
 		BDA68A1E25E2956C00E3710B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDA68A1D25E2956C00E3710B /* Preview Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		BD7266E725E29F4100067536 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		BD7266EB25E2ABDE00067536 /* TabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViews.swift; sourceTree = "<group>"; };
 		BD7266F025E2AD4000067536 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		BD790BC32619A08700E24863 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		BDA68A1325E2956900E3710B /* SocialMediaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMediaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA68A1625E2956900E3710B /* SocialMediaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaAppApp.swift; sourceTree = "<group>"; };
 		BDA68A1A25E2956C00E3710B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +104,14 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
+		BD790BC22619A06E00E24863 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				BD790BC32619A08700E24863 /* PostView.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
 		BDA68A0A25E2956800E3710B = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +155,7 @@
 		BDA68A2925E295D000E3710B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BD790BC22619A06E00E24863 /* Post */,
 				BDFA16C725E7F2AB00FFF852 /* TabBar */,
 				BDFA16C525E7F28000FFF852 /* Feeds */,
 				BDFA16C925E7F2CA00FFF852 /* Notifications */,
@@ -292,6 +303,7 @@
 				BD7266F125E2AD4000067536 /* CircleImageView.swift in Sources */,
 				BDA68A2725E295CA00E3710B /* FeedView.swift in Sources */,
 				BD3EC47425E95CE900F921AA /* ProfileView.swift in Sources */,
+				BD790BC42619A08700E24863 /* PostView.swift in Sources */,
 				BD7266EC25E2ABDE00067536 /* TabViews.swift in Sources */,
 				BDE40B3E25E6AE3700F547C4 /* FeedsViewModel.swift in Sources */,
 				BDFA16D425E8032800FFF852 /* Notification.swift in Sources */,

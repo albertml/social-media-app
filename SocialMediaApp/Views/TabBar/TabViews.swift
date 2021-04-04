@@ -49,6 +49,11 @@ struct TabViews: View {
                         SFSymbol.messages
                     }
                 
+                PostView()
+                    .tabItem {
+                        Text("")
+                    }
+                
                 NotificationsView()
                     .tabItem {
                         SFSymbol.notifications
