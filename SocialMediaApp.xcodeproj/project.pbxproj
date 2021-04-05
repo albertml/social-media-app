@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD3D2DC6261B559C00AB76F0 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D2DC5261B559C00AB76F0 /* ImagePicker.swift */; };
 		BD3EC47425E95CE900F921AA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EC47325E95CE900F921AA /* ProfileView.swift */; };
 		BD3EC47825E965EC00F921AA /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EC47725E965EC00F921AA /* FilledButton.swift */; };
 		BD3EC47B25E965FC00F921AA /* OutlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EC47A25E965FC00F921AA /* OutlineButton.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD3D2DC5261B559C00AB76F0 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		BD3EC47325E95CE900F921AA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BD3EC47725E965EC00F921AA /* FilledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButton.swift; sourceTree = "<group>"; };
 		BD3EC47A25E965FC00F921AA /* OutlineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineButton.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD3D2DC4261B557B00AB76F0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BD3D2DC5261B559C00AB76F0 /* ImagePicker.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		BD3EC47225E95CCC00F921AA /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +141,7 @@
 		BDA68A1525E2956900E3710B /* SocialMediaApp */ = {
 			isa = PBXGroup;
 			children = (
+				BD3D2DC4261B557B00AB76F0 /* Helper */,
 				BDFA16CA25E7F2DE00FFF852 /* App */,
 				BDE40B4125E6AE7400F547C4 /* Models */,
 				BDE40B3C25E6AE1B00F547C4 /* ViewModels */,
@@ -310,6 +321,7 @@
 				BDFA16D725E8043900FFF852 /* NotificationsViewModel.swift in Sources */,
 				BD3EC47B25E965FC00F921AA /* OutlineButton.swift in Sources */,
 				BDA68A1725E2956900E3710B /* SocialMediaAppApp.swift in Sources */,
+				BD3D2DC6261B559C00AB76F0 /* ImagePicker.swift in Sources */,
 				BDE40B4325E6AE8700F547C4 /* Story.swift in Sources */,
 				BDFA16CD25E7F30300FFF852 /* NotificationsView.swift in Sources */,
 			);
