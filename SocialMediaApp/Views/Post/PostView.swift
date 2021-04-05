@@ -106,6 +106,7 @@ struct PostView: View {
             )
             .navigationBarTitleDisplayMode(.inline)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .accentColor(.primary)
     }
 }
