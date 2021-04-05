@@ -85,9 +85,58 @@ struct PostView: View {
         }
     }
     
+    var selectedImagesView: some View {
+        HStack(spacing: 10) {
+            if inputImages.count >= 1 {
+                ZStack {
+                    Image(uiImage: inputImages[0])
+                        .resizable()
+                        .aspectRatio(CGSize(width: 4, height: 3), contentMode: .fill)
+                        .frame(width: 112, height: 88)
+                    VStack {
+                        HStack {
+                            Spacer()
+                            Button {
+                                debugPrint("Remove image")
+                            } label: {
+                                Image("btn_delete")
+                            }
+                        }
+                        .frame(width: 112, height: 20)
+                        Spacer()
+                    }
+                    .frame(width: 112, height: 88)
+                }
+            }
+            
+            if inputImages.count >= 2 {
+                ZStack {
+                    Image(uiImage: inputImages[1])
+                        .resizable()
+                        .aspectRatio(CGSize(width: 4, height: 3), contentMode: .fill)
+                        .frame(width: 112, height: 88)
+                    VStack {
+                        HStack {
+                            Spacer()
+                            Button {
+                                debugPrint("Remove image")
+                            } label: {
+                                Image("btn_delete")
+                            }
+                        }
+                        .frame(width: 112, height: 20)
+                        Spacer()
+                    }
+                    .frame(width: 112, height: 88)
+                }
+            }
+        }
+    }
+    
     @State private var title: String = ""
     @State private var showingImagePicker: Bool = false
     @State private var inputImage: UIImage?
+    @State private var inputImages: [UIImage] = []
     
     var body: some View {
         NavigationView {
@@ -97,6 +146,9 @@ struct PostView: View {
                         .frame(height: 10)
                     inputTitleView
                     uploadPhotoView
+                    if !inputImages.isEmpty {
+                      selectedImagesView
+                    }
                     Spacer()
                 }
                 .padding(.horizontal)
@@ -117,7 +169,7 @@ struct PostView: View {
     
     func loadImage() {
         guard let inputImage = inputImage else { return }
-        debugPrint("Ang image \(inputImage)")
+        inputImages.append(inputImage)
     }
 }
 
