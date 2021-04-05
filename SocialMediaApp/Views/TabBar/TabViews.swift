@@ -28,7 +28,7 @@ struct TabViews: View {
                     .shadow(radius: 2)
                 Image(systemName: "plus.circle.fill")
                     .resizable()
-                    .foregroundColor(.primary)
+                    .foregroundColor(.appBlueColor)
                     .frame(width: 50, height: 50)
             }
         }
