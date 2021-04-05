@@ -81,11 +81,13 @@ struct PostView: View {
             .padding(.horizontal)
         }
         .onTapGesture {
-            debugPrint("Browse images")
+            self.showingImagePicker = true
         }
     }
     
     @State private var title: String = ""
+    @State private var showingImagePicker: Bool = false
+    @State private var inputImage: UIImage?
     
     var body: some View {
         NavigationView {
@@ -108,6 +110,14 @@ struct PostView: View {
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .accentColor(.primary)
+        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+            ImagePicker(image: self.$inputImage)
+        }
+    }
+    
+    func loadImage() {
+        guard let inputImage = inputImage else { return }
+        debugPrint("Ang image \(inputImage)")
     }
 }
 
